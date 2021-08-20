@@ -1,0 +1,56 @@
+.headerContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/teahub.io.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.headerText {
+  padding-top: 3em;
+  margin: 0px auto 0px 58px;
+}
+.headerText h2 {
+  color: white;
+  font-size: 3rem;
+}
+.headerText p {
+  width: 480px;
+  padding-top: 1em;
+  color: white;
+}
+.headerText p::selection {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* for mobile  ****************/
+
+@media screen and (max-width: 480px) {
+  .headerContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url("../../assets/teahub.io.png");
+    background-size: cover;
+  }
+  .headerText h2 {
+    color: white;
+    font-size: 2rem;
+  }
+  .headerText p {
+    width: 280px;
+    color: white;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .headerText button {
+    margin-left: 0.5rem;
+  }
+  .headerText button span {
+    margin-left: -30px;
+    display: none;
+    font-size: 13.5px;
+  }
+}

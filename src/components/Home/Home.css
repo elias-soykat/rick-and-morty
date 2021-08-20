@@ -1,0 +1,123 @@
+.mainWrapper {
+  margin: 0 auto;
+  width: 91%;
+}
+.cardWrapper {
+  width: 600px;
+  height: 220px;
+  display: flex;
+  overflow: hidden;
+  background: rgb(60, 62, 68);
+  border-radius: 0.5rem;
+  margin: 0.75rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.imgWrapper {
+  flex: 2 1 0%;
+  width: 100%;
+}
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 1;
+  transition: opacity 0.5s ease 0s;
+  object-position: center center;
+  object-fit: cover;
+}
+.contentWrapper {
+  flex: 3 1 0%;
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding: 0.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contentWrapper .status {
+  display: flex;
+  align-items: center;
+}
+.contentWrapper span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.contentWrapper .status__icon {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375rem;
+  background: rgb(85, 204, 68);
+  border-radius: 50%;
+}
+.contentWrapper .status__icon-dead {
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.375rem;
+  background: rgb(255, 0, 76);
+  border-radius: 50%;
+}
+.contentWrapper .section {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.contentWrapper .text-gray {
+  color: rgb(158, 158, 158);
+}
+
+/* for mobile  ************/
+
+@media screen and (max-width: 480px) {
+  .mainWrapper {
+    display: flex;
+  }
+  .imgWrapper img {
+    width: 150px;
+  }
+  .cardWrapper {
+    width: 340px;
+    margin: 0.5rem auto;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    background: rgb(60, 62, 68);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .contentWrapper .status {
+    display: flex;
+    font-size: 0.7rem;
+    align-items: center;
+  }
+
+  .contentWrapper .status__icon {
+    height: 7px;
+    width: 7px;
+    margin-right: 0.375rem;
+    background: rgb(85, 204, 68);
+    border-radius: 50%;
+  }
+  .contentWrapper .status__icon-dead {
+    height: 7px;
+    width: 7px;
+    margin-right: 0.375rem;
+    background: rgb(255, 0, 76);
+    border-radius: 50%;
+  }
+  .contentWrapper .section {
+    flex: 1 1 0%;
+    font-size: 0.8rem;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  .cardWrapper .locationEpisode {
+    margin-top: 0.5rem;
+  }
+  .cardWrapper .locationEpisode .section {
+    margin-top: 0.3rem;
+  }
+}
